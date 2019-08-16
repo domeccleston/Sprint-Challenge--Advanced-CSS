@@ -1,1 +1,41 @@
 // Mixins Here
+
+// center an item vertically and horizontally
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// create a button with the specified background and font colors
+.btn-mixin(@bg-color, @font-color) {
+    .flex-center();
+    background: @bg-color;
+    color: @font-color;
+    width: 30%;
+    padding: 0.5em;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+
+// hide an item when on viewed on mobile device
+.hide-on-mobile {
+    @media @phone {
+        display: none;
+    }
+}
+
+// fill space on mobile
+.enlarge-on-mobile {
+    @media @phone {
+        width: 100%;
+    }
+}
+
+// reduce padding of .walk element on mobile 
+.compress-on-mobile {
+    @media @phone {
+        padding: 15px;
+    }
+}
