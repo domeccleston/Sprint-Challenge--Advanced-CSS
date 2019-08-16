@@ -1,6 +1,8 @@
 body {
+
+    background: @porcelain; 
+
     .sign-in-container {
-        background: pink;
         .flex-center();
         flex-direction: column;
         padding: 2em;
@@ -14,7 +16,6 @@ body {
     
     
     .form-container {    
-        background: grey;
         padding: 2em;
         .flex-center();
         flex-direction: column;
@@ -28,7 +29,26 @@ body {
             margin-bottom: 2em;
         }
 
-        
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+
+            label {
+                padding: 1em;
+                color: @shuttle-gray;
+                font-size: 1.6rem;
+            }
+
+            input {
+                padding: 0.5em;
+            }
+
+            button {
+                padding: 1em;
+                margin-top: 1em;
+            }
+        }
     
     }
 }
