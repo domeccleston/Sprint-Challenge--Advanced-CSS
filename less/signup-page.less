@@ -2,7 +2,7 @@ body {
 
     background: @porcelain; 
 
-    .sign-in-container {
+    .sign-up-container {
         .flex-center();
         flex-direction: column;
         padding: 2em;
@@ -45,7 +45,8 @@ body {
             }
 
             button {
-                padding: 1em;
+                .btn-mixin(@btn-bg-color, @porcelain);
+                width: 100%;
                 margin-top: 1em;
             }
         }
