@@ -306,7 +306,16 @@ footer {
   font-weight: 700;
   font-size: 1.8rem;
   border-radius: 5px;
-  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    padding: 1.5em;
+  }
 }
 .home .walk .walk-text .btn:hover {
   display: flex;
@@ -319,6 +328,16 @@ footer {
   font-weight: 700;
   font-size: 1.8rem;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    padding: 1.5em;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-// create a button with the specified background and font colors
+// create a responsive button with the specified background and font colors
 .btn-mixin(@bg-color, @font-color) {
     .flex-center();
     background: @bg-color;
@@ -17,6 +17,10 @@
     font-weight: 700;
     font-size: 1.8rem;
     border-radius: 5px;
+    .enlarge-on-mobile();
+    @media @phone {
+        padding: 1.5em;
+    }
 }
 
 // hide an item when on viewed on mobile device
