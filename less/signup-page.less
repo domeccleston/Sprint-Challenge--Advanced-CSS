@@ -1,0 +1,62 @@
+body {
+
+    background: @porcelain; 
+
+    .sign-up-container {
+        .flex-center();
+        flex-direction: column;
+        padding: 2em;
+        h2 {
+            padding: 1em;
+            font-size: 4rem;
+        }
+    }
+
+
+    
+    
+    .form-container {    
+        padding: 2em;
+        .flex-center();
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            height: 15%;
+            width: 15%;
+            border-radius: 50%;
+            border: 3px solid darkgrey;
+            margin-bottom: 2em;
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+
+            label {
+                padding: 1em;
+                color: @shuttle-gray;
+                font-size: 1.6rem;
+            }
+
+            input {
+                padding: 0.5em;
+            }
+
+            button {
+                .btn-mixin(@btn-bg-color, @porcelain);
+                width: 100%;
+                margin-top: 1em;
+            }
+
+            button:hover {
+                .btn-mixin(@porcelain, @btn-bg-color);
+                width: 100%;
+                margin-top: 1em;
+            }
+        }
+    
+    }
+}
+

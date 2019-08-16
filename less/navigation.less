@@ -1,1 +1,26 @@
 // Navigation code here
+
+nav {
+    background: @nav-bg;
+    .flex-center();
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+
+    .title-container {
+        height: 5em;
+        .flex-center();
+    }
+
+    .links-container {
+
+        height: 3em;
+
+        a {
+            text-decoration: none;
+            color: @header-font-color;
+            font-size: 1.6rem;
+            padding: 1em;
+        }
+    }
+}
